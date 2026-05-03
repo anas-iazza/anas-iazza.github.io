@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="640" viewBox="0 0 900 640">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f2f2f2"/>
+      <stop offset="100%" stop-color="#d9d9d9"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g)"/>
+  <circle cx="130" cy="110" r="70" fill="#F95700" opacity=".16"/>
+  <circle cx="790" cy="535" r="95" fill="#F95700" opacity=".16"/>
+  
+        <rect x="185" y="82" width="530" height="420" fill="#F95700" opacity=".12"/>
+        <rect x="250" y="115" width="400" height="360" fill="#111" stroke="#F95700" stroke-width="10"/>
+        <circle cx="450" cy="250" r="84" fill="#F95700"/>
+        <path d="M292 458c28-96 111-150 158-150s130 54 158 150" fill="#F95700" opacity=".9"/>
+        <path d="M660 110l70-58" stroke="#111" stroke-width="18" stroke-linecap="round"/>
+        <path d="M695 95l35-43-49 23" fill="#111"/>
+        
+  <text x="50%" y="580" text-anchor="middle" font-family="Bai Jamjuree, Arial, sans-serif" font-size="42" font-weight="700" fill="#111">Aerospace Profile</text>
+  <text x="50%" y="617" text-anchor="middle" font-family="Bai Jamjuree, Arial, sans-serif" font-size="22" font-weight="500" fill="#555">ENSA Safi • Python • IA</text>
+</svg>

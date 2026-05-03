@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="640" viewBox="0 0 900 640">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f2f2f2"/>
+      <stop offset="100%" stop-color="#d9d9d9"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g)"/>
+  <circle cx="130" cy="110" r="70" fill="#F95700" opacity=".16"/>
+  <circle cx="790" cy="535" r="95" fill="#F95700" opacity=".16"/>
+  <rect x="90" y="90" width="720" height="460" rx="26" fill="#111"/>
+        <rect x="135" y="140" width="630" height="320" rx="18" fill="#f2f2f2" opacity=".92"/>
+        <rect x="135" y="140" width="630" height="58" rx="18" fill="#F95700"/>
+        <circle cx="172" cy="170" r="8" fill="#111"/>
+        <circle cx="202" cy="170" r="8" fill="#111"/>
+        <circle cx="232" cy="170" r="8" fill="#111"/>
+        <rect x="185" y="250" width="220" height="32" rx="8" fill="#0f0f0f" opacity=".8"/>
+        <rect x="185" y="305" width="380" height="20" rx="6" fill="#0f0f0f" opacity=".35"/>
+        <rect x="185" y="345" width="300" height="20" rx="6" fill="#0f0f0f" opacity=".25"/>
+        <rect x="590" y="250" width="90" height="120" rx="18" fill="#F95700" opacity=".8"/>
+        <circle cx="635" cy="405" r="34" fill="#F95700" opacity=".35"/>
+  <text x="50%" y="580" text-anchor="middle" font-family="Bai Jamjuree, Arial, sans-serif" font-size="42" font-weight="700" fill="#111">AeroAnalytics</text>
+  <text x="50%" y="617" text-anchor="middle" font-family="Bai Jamjuree, Arial, sans-serif" font-size="22" font-weight="500" fill="#555">Aviation • Dashboard • Data</text>
+</svg>
