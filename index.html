@@ -109,6 +109,12 @@
             <b>Profil orienté conception, simulation et systèmes intelligents</b>, avec un intérêt fort pour les interfaces techniques, la modélisation mécanique, l’analyse de données et l’IA appliquée aux environnements aéronautiques.
           </p>
 
+          <div class="home__buttons">
+            <a href="assets/docs/cv-anas-iazza.pdf" target="_blank" class="button">
+              <i class="ri-file-text-line"></i> Voir mon CV
+            </a>
+          </div>
+
           <a href="#about" class="home__scroll">
             <div class="home__scroll-box">
               <i class="ri-arrow-down-s-line"></i>
@@ -148,6 +154,10 @@
               <i class="ri-send-plane-line"></i> Me contacter
             </a>
 
+            <a href="assets/docs/cv-anas-iazza.pdf" target="_blank" class="button__ghost" aria-label="Voir mon CV">
+              <i class="ri-file-text-line"></i>
+            </a>
+
             <a href="https://www.linkedin.com/in/anas-iazza/" target="_blank" class="button__ghost" aria-label="LinkedIn">
               <i class="ri-linkedin-box-line"></i>
             </a>
@@ -158,22 +168,24 @@
 
     <!-- Services -->
     <section class="services section" id="services">
-      <h2 class="section__title-2">
-        <span>Expertise.</span>
-      </h2>
+      <div class="services__intro container">
+        <div class="services__eyebrow-wrap">
+          <span class="services__eyebrow">MON</span>
+        </div>
+        <h2 class="services__main-title">EXPERTISE<span>.</span></h2>
+        <p class="services__summary">
+          Des compétences complémentaires au service de projets techniques, de la conception et la simulation à l’automatisation intelligente.
+        </p>
+      </div>
 
-      <div class="services__container container grid">
+      <div class="services__container container">
         <article class="services__card">
-          <div class="services__border"></div>
-
-          <div class="services__content">
-            <div class="services__icon">
-              <div class="services__box"></div>
-              <i class="ri-compasses-2-line"></i>
+          <div class="services__panel">
+            <div class="services__icon-hex">
+              <img src="assets/img/expertise-conception.svg" alt="Icône conception et simulation" class="services__icon-img">
             </div>
-
-            <h2 class="services__title">Conception & Simulation</h2>
-
+            <h3 class="services__title">Conception &amp; Simulation</h3>
+            <span class="services__line"></span>
             <p class="services__description">
               Création de modèles, simulateurs, interfaces techniques et outils de suivi inspirés des besoins de conception et d’analyse modernes.
             </p>
@@ -181,16 +193,12 @@
         </article>
 
         <article class="services__card">
-          <div class="services__border"></div>
-
-          <div class="services__content">
-            <div class="services__icon">
-              <div class="services__box"></div>
-              <i class="ri-code-box-line"></i>
+          <div class="services__panel">
+            <div class="services__icon-hex">
+              <img src="assets/img/expertise-python.svg" alt="Icône développement Python" class="services__icon-img">
             </div>
-
-            <h2 class="services__title">Développement Python</h2>
-
+            <h3 class="services__title">Développement Python</h3>
+            <span class="services__line"></span>
             <p class="services__description">
               Création d’applications avec Python, PyQt5 et CustomTkinter pour visualiser, contrôler et analyser des données techniques.
             </p>
@@ -198,16 +206,12 @@
         </article>
 
         <article class="services__card">
-          <div class="services__border"></div>
-
-          <div class="services__content">
-            <div class="services__icon">
-              <div class="services__box"></div>
-              <i class="ri-cpu-line"></i>
+          <div class="services__panel">
+            <div class="services__icon-hex">
+              <img src="assets/img/expertise-ai.svg" alt="Icône intelligence artificielle et automatisation" class="services__icon-img">
             </div>
-
-            <h2 class="services__title">IA & Automatisation</h2>
-
+            <h3 class="services__title">IA &amp; Automatisation</h3>
+            <span class="services__line"></span>
             <p class="services__description">
               Intégration d’outils IA, computer vision, dashboards intelligents et workflows Node-RED pour des systèmes plus dynamiques.
             </p>
@@ -484,36 +488,46 @@
         <span>Certificats.</span>
       </h2>
 
-      <div class="certificates__container container grid">
-        <article class="projects__card certificates__card">
-          <div class="projects__image certificates__image">
-            <img src="assets/img/certificate-dataviz.png" alt="Certificat Data Visualisation et Business Intelligence YaneCode Academy" class="projects__img certificates__img">
-            <a href="https://www.yanecode.net/p/dataviz-yc-0x708.html" target="_blank" class="projects__button button" aria-label="Voir le certificat Data Visualisation">
+      <p class="certificates__intro container">
+        Une sélection de certificats qui illustrent mon intérêt pour la <b>data visualisation</b>, la <b>business intelligence</b> et la conception d’outils analytiques professionnels.
+      </p>
+
+      <div class="certificates__container container">
+        <article class="certificates__card">
+          <div class="certificates__preview">
+            <span class="certificates__badge"><i class="ri-verified-badge-line"></i> PDF officiel</span>
+            <img src="assets/img/certificate-dataviz.png" alt="Certificat Data Visualisation et Business Intelligence YaneCode Academy" class="certificates__img">
+            <a href="assets/docs/certificat-data-visualisation-anas-iazza.pdf" target="_blank" class="projects__button button" aria-label="Voir le certificat Data Visualisation en PDF">
               <i class="ri-arrow-right-up-line"></i>
             </a>
           </div>
 
-          <div class="projects__content">
+          <div class="certificates__content">
             <h3 class="projects__subtitle">YaneCode Academy</h3>
-            <h2 class="projects__title">Data Visualisation & Business Intelligence</h2>
+            <h2 class="projects__title">Data Visualisation &amp; Business Intelligence</h2>
 
             <p class="projects__description">
-              Certificat de formation en visualisation de données et Business Intelligence, couvrant Python, analyse de données, automatisation, Power BI et création de tableaux de bord interactifs.
+              Certificat de formation centré sur la visualisation de données, Python, l’analyse de données, l’automatisation, Power BI et la création de tableaux de bord interactifs pour l’aide à la décision.
             </p>
-          </div>
 
-          <div class="projects__buttons">
-            <a href="https://www.yanecode.net/p/dataviz-yc-0x708.html" target="_blank" class="projects__link">
-              <i class="ri-award-line"></i> Certificat
-            </a>
-            <a href="https://www.yanecode.net/p/dataviz-yc-0x708.html" target="_blank" class="projects__link">
-              <i class="ri-external-link-line"></i> Voir certificat
-            </a>
+            <ul class="certificates__list">
+              <li><i class="ri-check-line"></i> Support PDF intégré au portfolio</li>
+              <li><i class="ri-check-line"></i> Aperçu visuel du certificat</li>
+              <li><i class="ri-check-line"></i> Ouverture directe du document officiel</li>
+            </ul>
+
+            <div class="projects__buttons">
+              <a href="assets/docs/certificat-data-visualisation-anas-iazza.pdf" target="_blank" class="projects__link">
+                <i class="ri-award-line"></i> Certificat
+              </a>
+              <a href="assets/docs/certificat-data-visualisation-anas-iazza.pdf" target="_blank" class="projects__link">
+                <i class="ri-external-link-line"></i> Voir certificat
+              </a>
+            </div>
           </div>
         </article>
       </div>
     </section>
-
     <!-- Contact -->
     <section class="contact section" id="contact">
       <div class="contact__container grid">
