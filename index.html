@@ -312,226 +312,251 @@
 
     <!-- Projects -->
     <section class="projects section" id="projects">
-      <h2 class="section__title-1">
-        <span>Projets.</span>
-      </h2>
+      <div class="projects__header container">
+        <h2 class="section__title-1 projects__heading">
+          <span>Projets.</span>
+        </h2>
+        <p class="projects__intro">
+          Sélection de projets techniques présentés sous forme de slider professionnel : conception, data, IA, interfaces aéronautiques et systèmes intelligents.
+        </p>
+      </div>
 
-      <div class="projects__container container grid">
-        <article class="projects__card">
-          <div class="projects__image">
-            <img src="assets/img/project-4.png" alt="AeroAnalytics Aviation Dashboard" class="projects__img">
-            <a href="https://aeroanalytics.streamlit.app/" target="_blank" class="projects__button button" aria-label="Voir le projet AeroAnalytics">
-              <i class="ri-arrow-right-up-line"></i>
-            </a>
-          </div>
+      <div class="projects__showcase container" id="projects-showcase">
+        <button class="projects__nav projects__nav--prev" id="project-prev" aria-label="Projet précédent">
+          <i class="ri-arrow-left-s-line"></i>
+        </button>
 
-          <div class="projects__content">
-            <h3 class="projects__subtitle">Aviation Data</h3>
-            <h2 class="projects__title">AeroAnalytics Aviation Dashboard</h2>
+        <div class="projects__slider" id="projects-slider">
+          <article class="project-slide is-active">
+            <div class="project-slide__info">
+              <span class="project-slide__number">01</span>
+              <span class="project-slide__category">Aviation Data</span>
+              <h3 class="project-slide__title">AeroAnalytics Aviation Dashboard</h3>
+              <p class="project-slide__description">
+                Dashboard aviation orienté analyse de données, visualisation de KPI techniques et présentation claire des informations pour le suivi aéronautique.
+              </p>
+              <div class="project-slide__techs project-slide__techs--logos" aria-label="Technologies utilisées">
+                <img src="https://cdn.simpleicons.org/python/111111" alt="Python" title="Python" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/python.svg';">
+                <img src="https://cdn.simpleicons.org/streamlit/111111" alt="Streamlit" title="Streamlit" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/streamlit.svg';">
+                <img src="https://cdn.simpleicons.org/plotly/111111" alt="Plotly" title="Plotly" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/plotly.svg';">
+                <img src="https://cdn.simpleicons.org/pandas/111111" alt="Pandas" title="Pandas" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/pandas.svg';">
+              </div>
+              <div class="project-slide__actions">
+                <a href="https://aeroanalytics.streamlit.app/" target="_blank" class="project-slide__main-link" aria-label="Voir le projet AeroAnalytics">
+                  <i class="ri-arrow-right-up-line"></i>
+                </a>
+                <a href="https://github.com/anas-iazza/aeroanalytics-aviation-dashboard" target="_blank" class="project-slide__github" aria-label="GitHub AeroAnalytics">
+                  <i class="ri-github-line"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-slide__visual">
+              <img src="assets/img/project-4.png" alt="AeroAnalytics Aviation Dashboard" class="project-slide__img">
+            </div>
+          </article>
 
-            <p class="projects__description">
-              Dashboard aviation orienté analyse de données, visualisation de KPI techniques et présentation claire des informations pour le suivi aéronautique.
-            </p>
-          </div>
+          <article class="project-slide">
+            <div class="project-slide__info">
+              <span class="project-slide__number">02</span>
+              <span class="project-slide__category">IA &amp; Maintenance</span>
+              <h3 class="project-slide__title">Aircraft Engine Predictive Maintenance</h3>
+              <p class="project-slide__description">
+                Projet de maintenance prédictive appliqué aux moteurs d’avion, utilisant l’analyse de données et le machine learning pour anticiper les défaillances.
+              </p>
+              <div class="project-slide__techs project-slide__techs--logos" aria-label="Technologies utilisées">
+                <img src="https://cdn.simpleicons.org/python/111111" alt="Python" title="Python" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/python.svg';">
+                <img src="https://cdn.simpleicons.org/scikitlearn/111111" alt="Scikit-learn" title="Scikit-learn" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/scikitlearn.svg';">
+                <img src="https://cdn.simpleicons.org/tensorflow/111111" alt="TensorFlow" title="TensorFlow" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/tensorflow.svg';">
+                <img src="https://cdn.simpleicons.org/streamlit/111111" alt="Streamlit" title="Streamlit" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/streamlit.svg';">
+              </div>
+              <div class="project-slide__actions">
+                <a href="https://aircraftmaintenance.streamlit.app/" target="_blank" class="project-slide__main-link" aria-label="Voir le projet Aircraft Maintenance">
+                  <i class="ri-arrow-right-up-line"></i>
+                </a>
+                <a href="https://github.com/anas-iazza/aircraft-engine-predictive-maintenance" target="_blank" class="project-slide__github" aria-label="GitHub Aircraft Maintenance">
+                  <i class="ri-github-line"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-slide__visual">
+              <img src="assets/img/project-5.png" alt="Aircraft Engine Predictive Maintenance" class="project-slide__img">
+            </div>
+          </article>
 
-          <div class="projects__buttons">
-            <a href="https://github.com/anas-iazza/aeroanalytics-aviation-dashboard" target="_blank" class="projects__link">
-              <i class="ri-github-line"></i> GitHub
-            </a>
-            <a href="https://aeroanalytics.streamlit.app/" target="_blank" class="projects__link">
-              <i class="ri-external-link-line"></i> Voir projet
-            </a>
-          </div>
-        </article>
+          <article class="project-slide">
+            <div class="project-slide__info">
+              <span class="project-slide__number">03</span>
+              <span class="project-slide__category">Business Intelligence</span>
+              <h3 class="project-slide__title">Power BI HSE Dashboard</h3>
+              <p class="project-slide__description">
+                Tableau de bord HSE réalisé avec Power BI pour suivre les indicateurs de sécurité, analyser les tendances et faciliter la lecture des performances.
+              </p>
+              <div class="project-slide__techs project-slide__techs--logos" aria-label="Technologies utilisées">
+                <img src="https://cdn.simpleicons.org/powerbi/111111" alt="Power BI" title="Power BI" class="project-slide__tech-logo project-slide__tech-logo--wide" onerror="this.onerror=null;this.src='assets/img/tech/powerbi.svg';">
+                <img src="https://cdn.simpleicons.org/microsoft/111111" alt="Microsoft" title="Microsoft" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/microsoft.svg';">
+                <img src="https://cdn.simpleicons.org/microsoftexcel/111111" alt="Excel" title="Excel" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/excel.svg';">
+                <img src="https://cdn.simpleicons.org/databricks/111111" alt="Data analytics" title="Data analytics" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/data.svg';">
+              </div>
+              <div class="project-slide__actions">
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiMzI4NjJmYzktZmEwMS00MTQ5LThkMWYtMjc3YTkxZGVhY2NkIiwidCI6IjgyYThkZTI0LWQwMmYtNDRiOS1iZjRkLTk2ZjU4NDJlZjBiYSJ9" target="_blank" class="project-slide__main-link" aria-label="Voir le projet Power BI HSE">
+                  <i class="ri-arrow-right-up-line"></i>
+                </a>
+                <a href="https://github.com/anas-iazza/powerbi-hse-dashboard" target="_blank" class="project-slide__github" aria-label="GitHub Power BI HSE">
+                  <i class="ri-github-line"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-slide__visual">
+              <img src="assets/img/project-6.png" alt="Power BI HSE Dashboard" class="project-slide__img">
+            </div>
+          </article>
 
-        <article class="projects__card">
-          <div class="projects__image">
-            <img src="assets/img/project-5.png" alt="Aircraft Engine Predictive Maintenance" class="projects__img">
-            <a href="https://aircraftmaintenance.streamlit.app/" target="_blank" class="projects__button button" aria-label="Voir le projet predictive maintenance">
-              <i class="ri-arrow-right-up-line"></i>
-            </a>
-          </div>
+          <article class="project-slide">
+            <div class="project-slide__info">
+              <span class="project-slide__number">04</span>
+              <span class="project-slide__category">CAO 3D</span>
+              <h3 class="project-slide__title">Cessna Aircraft SolidWorks Model</h3>
+              <p class="project-slide__description">
+                Modélisation 3D d’un avion Cessna sous SolidWorks, avec une approche orientée conception mécanique, assemblage et présentation technique.
+              </p>
+              <div class="project-slide__techs project-slide__techs--logos" aria-label="Technologies utilisées">
+                <img src="https://cdn.simpleicons.org/solidworks/111111" alt="SolidWorks" title="SolidWorks" class="project-slide__tech-logo project-slide__tech-logo--wide" onerror="this.onerror=null;this.src='assets/img/tech/solidworks.svg';">
+                <img src="https://cdn.simpleicons.org/dassaultsystemes/111111" alt="Dassault Systèmes" title="Dassault Systèmes" class="project-slide__tech-logo project-slide__tech-logo--wide" onerror="this.onerror=null;this.src='assets/img/tech/dassault.svg';">
+                <img src="https://cdn.simpleicons.org/autodesk/111111" alt="Autodesk" title="Autodesk" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/autodesk.svg';">
+                <img src="https://cdn.simpleicons.org/sketchfab/111111" alt="3D" title="3D" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/sketchfab.svg';">
+              </div>
+              <div class="project-slide__actions">
+                <a href="https://a360.co/4dmQ7br" target="_blank" class="project-slide__main-link" aria-label="Voir le projet Cessna">
+                  <i class="ri-arrow-right-up-line"></i>
+                </a>
+                <a href="https://github.com/anas-iazza/cessna-aircraft-solidworks-model" target="_blank" class="project-slide__github" aria-label="GitHub Cessna">
+                  <i class="ri-github-line"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-slide__visual">
+              <img src="assets/img/project-3.png" alt="Cessna Aircraft SolidWorks Model" class="project-slide__img">
+            </div>
+          </article>
 
-          <div class="projects__content">
-            <h3 class="projects__subtitle">IA & Maintenance</h3>
-            <h2 class="projects__title">Aircraft Engine Predictive Maintenance</h2>
+          <article class="project-slide">
+            <div class="project-slide__info">
+              <span class="project-slide__number">05</span>
+              <span class="project-slide__category">IoT &amp; Automatisation</span>
+              <h3 class="project-slide__title">AeroSync Node-RED IoT Monitoring</h3>
+              <p class="project-slide__description">
+                Workflow de monitoring aéronautique avec Node-RED, logique automatisée, traitement de signaux et visualisation dynamique des données techniques.
+              </p>
+              <div class="project-slide__techs project-slide__techs--logos" aria-label="Technologies utilisées">
+                <img src="https://cdn.simpleicons.org/nodered/111111" alt="Node-RED" title="Node-RED" class="project-slide__tech-logo project-slide__tech-logo--wide" onerror="this.onerror=null;this.src='assets/img/tech/nodered.svg';">
+                <img src="https://cdn.simpleicons.org/grafana/111111" alt="Grafana" title="Grafana" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/grafana.svg';">
+                <img src="https://cdn.simpleicons.org/raspberrypi/111111" alt="IoT" title="IoT" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/raspberrypi.svg';">
+                <img src="https://cdn.simpleicons.org/mqtt/111111" alt="MQTT" title="MQTT" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/mqtt.svg';">
+              </div>
+              <div class="project-slide__actions">
+                <a href="https://github.com/anas-iazza/aerosync-node-red-iot-aircraft-monitoring" target="_blank" class="project-slide__main-link" aria-label="Voir le projet AeroSync">
+                  <i class="ri-arrow-right-up-line"></i>
+                </a>
+                <a href="https://github.com/anas-iazza/aerosync-node-red-iot-aircraft-monitoring" target="_blank" class="project-slide__github" aria-label="GitHub AeroSync">
+                  <i class="ri-github-line"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-slide__visual">
+              <img src="assets/img/project-2.png" alt="AeroSync Node-RED IoT Aircraft Monitoring" class="project-slide__img">
+            </div>
+          </article>
 
-            <p class="projects__description">
-              Projet de maintenance prédictive appliqué aux moteurs d’avion, utilisant l’analyse de données et le machine learning pour anticiper les défaillances.
-            </p>
-          </div>
+          <article class="project-slide">
+            <div class="project-slide__info">
+              <span class="project-slide__number">06</span>
+              <span class="project-slide__category">Simulation &amp; Interface</span>
+              <h3 class="project-slide__title">Aero Manager PyQt5</h3>
+              <p class="project-slide__description">
+                Interface aéronautique développée en Python/PyQt5 pour gérer des paramètres de vol, visualiser des données et offrir une expérience cockpit professionnelle.
+              </p>
+              <div class="project-slide__techs project-slide__techs--logos" aria-label="Technologies utilisées">
+                <img src="https://cdn.simpleicons.org/python/111111" alt="Python" title="Python" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/python.svg';">
+                <img src="https://cdn.simpleicons.org/qt/111111" alt="Qt / PyQt5" title="Qt / PyQt5" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/qt.svg';">
+                <img src="https://cdn.simpleicons.org/windows/111111" alt="Desktop app" title="Desktop app" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/windows.svg';">
+                <img src="https://cdn.simpleicons.org/github/111111" alt="GitHub" title="GitHub" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/github.svg';">
+              </div>
+              <div class="project-slide__actions">
+                <a href="https://incandescent-raindrop-24d08a.netlify.app/" target="_blank" class="project-slide__main-link" aria-label="Voir le projet Aero Manager">
+                  <i class="ri-arrow-right-up-line"></i>
+                </a>
+                <a href="https://github.com/anas-iazza/aero-manager-pyqt5" target="_blank" class="project-slide__github" aria-label="GitHub Aero Manager">
+                  <i class="ri-github-line"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-slide__visual">
+              <img src="assets/img/project-1.png" alt="Aero Manager PyQt5" class="project-slide__img">
+            </div>
+          </article>
 
-          <div class="projects__buttons">
-            <a href="https://github.com/anas-iazza/aircraft-engine-predictive-maintenance" target="_blank" class="projects__link">
-              <i class="ri-github-line"></i> GitHub
-            </a>
-            <a href="https://aircraftmaintenance.streamlit.app/" target="_blank" class="projects__link">
-              <i class="ri-external-link-line"></i> Voir projet
-            </a>
-          </div>
-        </article>
+          <article class="project-slide">
+            <div class="project-slide__info">
+              <span class="project-slide__number">07</span>
+              <span class="project-slide__category">Computer Vision &amp; Safety</span>
+              <h3 class="project-slide__title">AEROFOD Vision Pro</h3>
+              <p class="project-slide__description">
+                Plateforme intelligente de détection FOD sur piste aéroportuaire, conçue pour automatiser l’inspection visuelle et assister la décision opérationnelle.
+              </p>
+              <div class="project-slide__techs project-slide__techs--logos" aria-label="Technologies utilisées">
+                <img src="https://cdn.simpleicons.org/python/111111" alt="Python" title="Python" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/python.svg';">
+                <img src="https://cdn.simpleicons.org/opencv/111111" alt="OpenCV" title="OpenCV" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/opencv.svg';">
+                <img src="https://cdn.simpleicons.org/pytorch/111111" alt="Computer Vision" title="Computer Vision" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/pytorch.svg';">
+                <img src="https://cdn.simpleicons.org/vercel/111111" alt="Vercel" title="Vercel" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/vercel.svg';">
+              </div>
+              <div class="project-slide__actions">
+                <a href="https://aero-fod-vision-ba95.vercel.app/" target="_blank" class="project-slide__main-link" aria-label="Voir le projet AEROFOD">
+                  <i class="ri-arrow-right-up-line"></i>
+                </a>
+                <a href="https://github.com/anas-iazza/aero-fod-vision" target="_blank" class="project-slide__github" aria-label="GitHub AEROFOD">
+                  <i class="ri-github-line"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-slide__visual">
+              <img src="assets/img/project-7.png" alt="AEROFOD Vision Pro" class="project-slide__img">
+            </div>
+          </article>
 
-        <article class="projects__card">
-          <div class="projects__image">
-            <img src="assets/img/project-6.png" alt="Power BI HSE Dashboard" class="projects__img">
-            <a href="https://app.powerbi.com/view?r=eyJrIjoiMzI4NjJmYzktZmEwMS00MTQ5LThkMWYtMjc3YTkxZGVhY2NkIiwidCI6IjgyYThkZTI0LWQwMmYtNDRiOS1iZjRkLTk2ZjU4NDJlZjBiYSJ9" target="_blank" class="projects__button button" aria-label="Voir le projet Power BI HSE">
-              <i class="ri-arrow-right-up-line"></i>
-            </a>
-          </div>
+          <article class="project-slide">
+            <div class="project-slide__info">
+              <span class="project-slide__number">08</span>
+              <span class="project-slide__category">Assistant IA &amp; Analyse Documentaire</span>
+              <h3 class="project-slide__title">AeroAssist Nova</h3>
+              <p class="project-slide__description">
+                Assistant aéronautique professionnel conçu pour le chat, l’analyse documentaire, les résumés techniques et l’assistance guidée dans une interface moderne.
+              </p>
+              <div class="project-slide__techs project-slide__techs--logos" aria-label="Technologies utilisées">
+                <img src="https://cdn.simpleicons.org/javascript/111111" alt="JavaScript" title="JavaScript" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/javascript.svg';">
+                <img src="https://cdn.simpleicons.org/html5/111111" alt="HTML5" title="HTML5" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/html5.svg';">
+                <img src="https://cdn.simpleicons.org/css3/111111" alt="CSS3" title="CSS3" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/css3.svg';">
+                <img src="https://cdn.simpleicons.org/googlegemini/111111" alt="Gemini API" title="Gemini API" class="project-slide__tech-logo" onerror="this.onerror=null;this.src='assets/img/tech/gemini.svg';">
+              </div>
+              <div class="project-slide__actions">
+                <a href="https://aeroassist-nova-chatbot.vercel.app/" target="_blank" class="project-slide__main-link" aria-label="Voir le projet AeroAssist Nova">
+                  <i class="ri-arrow-right-up-line"></i>
+                </a>
+                <a href="https://github.com/anas-iazza/aeroassist-nova-chatbot" target="_blank" class="project-slide__github" aria-label="GitHub AeroAssist Nova">
+                  <i class="ri-github-line"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-slide__visual">
+              <img src="assets/img/project-8.png" alt="AeroAssist Nova" class="project-slide__img">
+            </div>
+          </article>
+        </div>
 
-          <div class="projects__content">
-            <h3 class="projects__subtitle">Business Intelligence</h3>
-            <h2 class="projects__title">Power BI HSE Dashboard</h2>
+        <button class="projects__nav projects__nav--next" id="project-next" aria-label="Projet suivant">
+          <i class="ri-arrow-right-s-line"></i>
+        </button>
 
-            <p class="projects__description">
-              Tableau de bord HSE réalisé avec Power BI pour suivre les indicateurs de sécurité, analyser les tendances et faciliter la lecture des performances.
-            </p>
-          </div>
-
-          <div class="projects__buttons">
-            <a href="https://github.com/anas-iazza/powerbi-hse-dashboard" target="_blank" class="projects__link">
-              <i class="ri-github-line"></i> GitHub
-            </a>
-            <a href="https://app.powerbi.com/view?r=eyJrIjoiMzI4NjJmYzktZmEwMS00MTQ5LThkMWYtMjc3YTkxZGVhY2NkIiwidCI6IjgyYThkZTI0LWQwMmYtNDRiOS1iZjRkLTk2ZjU4NDJlZjBiYSJ9" target="_blank" class="projects__link">
-              <i class="ri-external-link-line"></i> Voir projet
-            </a>
-          </div>
-        </article>
-
-        <article class="projects__card">
-          <div class="projects__image">
-            <img src="assets/img/project-3.png" alt="Cessna Aircraft SolidWorks Model" class="projects__img">
-            <a href="https://a360.co/4dmQ7br" target="_blank" class="projects__button button" aria-label="Voir le projet Cessna SolidWorks">
-              <i class="ri-arrow-right-up-line"></i>
-            </a>
-          </div>
-
-          <div class="projects__content">
-            <h3 class="projects__subtitle">CAO 3D</h3>
-            <h2 class="projects__title">Cessna Aircraft SolidWorks Model</h2>
-
-            <p class="projects__description">
-              Modélisation 3D d’un avion Cessna sous SolidWorks, avec une approche orientée conception mécanique, assemblage et présentation technique.
-            </p>
-          </div>
-
-          <div class="projects__buttons">
-            <a href="https://github.com/anas-iazza/cessna-aircraft-solidworks-model" target="_blank" class="projects__link">
-              <i class="ri-github-line"></i> GitHub
-            </a>
-            <a href="https://a360.co/4dmQ7br" target="_blank" class="projects__link">
-              <i class="ri-external-link-line"></i> Voir projet
-            </a>
-          </div>
-        </article>
-
-        <article class="projects__card">
-          <div class="projects__image">
-            <img src="assets/img/project-2.png" alt="AeroSync Node-RED IoT Aircraft Monitoring" class="projects__img">
-            <a href="https://github.com/anas-iazza/aerosync-node-red-iot-aircraft-monitoring" target="_blank" class="projects__button button" aria-label="Voir le projet AeroSync">
-              <i class="ri-arrow-right-up-line"></i>
-            </a>
-          </div>
-
-          <div class="projects__content">
-            <h3 class="projects__subtitle">IoT & Automatisation</h3>
-            <h2 class="projects__title">AeroSync Node-RED IoT Aircraft Monitoring</h2>
-
-            <p class="projects__description">
-              Workflow de monitoring aéronautique avec Node-RED, logique automatisée, traitement de signaux et visualisation dynamique des données techniques.
-            </p>
-          </div>
-
-          <div class="projects__buttons">
-            <a href="https://github.com/anas-iazza/aerosync-node-red-iot-aircraft-monitoring" target="_blank" class="projects__link">
-              <i class="ri-github-line"></i> GitHub
-            </a>
-            <a href="https://github.com/anas-iazza/aerosync-node-red-iot-aircraft-monitoring" target="_blank" class="projects__link">
-              <i class="ri-external-link-line"></i> Voir projet
-            </a>
-          </div>
-        </article>
-
-        <article class="projects__card">
-          <div class="projects__image">
-            <img src="assets/img/project-1.png" alt="Aero Manager PyQt5" class="projects__img">
-            <a href="https://incandescent-raindrop-24d08a.netlify.app/" target="_blank" class="projects__button button" aria-label="Voir le projet Aero Manager">
-              <i class="ri-arrow-right-up-line"></i>
-            </a>
-          </div>
-
-          <div class="projects__content">
-            <h3 class="projects__subtitle">Simulation & Interface</h3>
-            <h2 class="projects__title">Aero Manager PyQt5</h2>
-
-            <p class="projects__description">
-              Interface aéronautique développée en Python/PyQt5 pour gérer des paramètres de vol, visualiser des données et offrir une expérience cockpit professionnelle.
-            </p>
-          </div>
-
-          <div class="projects__buttons">
-            <a href="https://github.com/anas-iazza/aero-manager-pyqt5" target="_blank" class="projects__link">
-              <i class="ri-github-line"></i> GitHub
-            </a>
-            <a href="https://incandescent-raindrop-24d08a.netlify.app/" target="_blank" class="projects__link">
-              <i class="ri-external-link-line"></i> Voir projet
-            </a>
-          </div>
-        </article>
-
-        <article class="projects__card">
-          <div class="projects__image">
-            <img src="assets/img/project-7.png" alt="AEROFOD Vision Pro" class="projects__img">
-            <a href="https://aero-fod-vision-ba95.vercel.app/" target="_blank" class="projects__button button" aria-label="Voir le projet AEROFOD Vision Pro">
-              <i class="ri-arrow-right-up-line"></i>
-            </a>
-          </div>
-
-          <div class="projects__content">
-            <h3 class="projects__subtitle">Computer Vision &amp; Safety</h3>
-            <h2 class="projects__title">AEROFOD Vision Pro</h2>
-
-            <p class="projects__description">
-              Plateforme intelligente de détection FOD sur piste aéroportuaire, conçue pour automatiser l’inspection visuelle, analyser les objets étrangers suspects et assister la prise de décision opérationnelle.
-            </p>
-          </div>
-
-          <div class="projects__buttons">
-            <a href="https://github.com/anas-iazza/aero-fod-vision" target="_blank" class="projects__link">
-              <i class="ri-github-line"></i> GitHub
-            </a>
-            <a href="https://aero-fod-vision-ba95.vercel.app/" target="_blank" class="projects__link">
-              <i class="ri-external-link-line"></i> Voir projet
-            </a>
-          </div>
-        </article>
-
-        <article class="projects__card">
-          <div class="projects__image">
-            <img src="assets/img/project-8.png" alt="AeroAssist Nova" class="projects__img">
-            <a href="https://aeroassist-nova-chatbot.vercel.app/" target="_blank" class="projects__button button" aria-label="Voir le projet AeroAssist Nova">
-              <i class="ri-arrow-right-up-line"></i>
-            </a>
-          </div>
-
-          <div class="projects__content">
-            <h3 class="projects__subtitle">Assistant IA &amp; Analyse Documentaire</h3>
-            <h2 class="projects__title">AeroAssist Nova</h2>
-
-            <p class="projects__description">
-              Assistant aéronautique professionnel conçu pour accompagner les conversations, l’analyse de documents, les résumés techniques et l’assistance guidée dans une interface claire, moderne et orientée productivité.
-            </p>
-          </div>
-
-          <div class="projects__buttons">
-            <a href="https://github.com/anas-iazza/aeroassist-nova-chatbot" target="_blank" class="projects__link">
-              <i class="ri-github-line"></i> GitHub
-            </a>
-            <a href="https://aeroassist-nova-chatbot.vercel.app/" target="_blank" class="projects__link">
-              <i class="ri-external-link-line"></i> Voir projet
-            </a>
-          </div>
-        </article>
+        <div class="projects__counter" id="projects-counter">01 / 08</div>
       </div>
     </section>
 

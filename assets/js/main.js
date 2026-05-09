@@ -152,3 +152,43 @@ if (typeof ScrollReveal !== 'undefined') {
   sr.reveal('.home__name, .home__info, .about__container .section__title-1, .about__info, .contact__data', {origin: 'left'});
   sr.reveal('.services__card, .skills__card, .projects__card', {interval: 100});
 }
+
+/*=============== PREMIUM PROJECTS SLIDER ===============*/
+const projectSlides = document.querySelectorAll('.project-slide');
+const projectPrev = document.getElementById('project-prev');
+const projectNext = document.getElementById('project-next');
+const projectsCounter = document.getElementById('projects-counter');
+let currentProject = 0;
+
+function showProject(index) {
+  if (!projectSlides.length) return;
+
+  projectSlides[currentProject].classList.remove('is-active');
+  currentProject = (index + projectSlides.length) % projectSlides.length;
+  projectSlides[currentProject].classList.add('is-active');
+
+  if (projectsCounter) {
+    const current = String(currentProject + 1).padStart(2, '0');
+    const total = String(projectSlides.length).padStart(2, '0');
+    projectsCounter.textContent = `${current} / ${total}`;
+  }
+}
+
+if (projectNext) {
+  projectNext.addEventListener('click', () => showProject(currentProject + 1));
+}
+
+if (projectPrev) {
+  projectPrev.addEventListener('click', () => showProject(currentProject - 1));
+}
+
+window.addEventListener('keydown', (event) => {
+  const projectsSection = document.getElementById('projects');
+  if (!projectsSection) return;
+
+  const rect = projectsSection.getBoundingClientRect();
+  const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+
+  if (isVisible && event.key === 'ArrowRight') showProject(currentProject + 1);
+  if (isVisible && event.key === 'ArrowLeft') showProject(currentProject - 1);
+});
