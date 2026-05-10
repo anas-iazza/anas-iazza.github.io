@@ -4137,3 +4137,395 @@ body.dark-theme {
   background: rgba(255,255,255,.08);
   border-color: rgba(255,255,255,.10);
 }
+
+/* =====================================================================
+   FINAL MOBILE NAV FIX - clean professional fullscreen menu
+   ===================================================================== */
+@media screen and (max-width: 1150px){
+  .header{
+    height: 4.25rem !important;
+    min-height: 4.25rem !important;
+    background: rgba(236,236,236,.96) !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,.06);
+  }
+
+  .nav{
+    height: 4.25rem !important;
+    min-height: 4.25rem !important;
+    width: min(100% - 1.5rem, 980px) !important;
+    column-gap: .7rem !important;
+  }
+
+  .nav__logo{
+    min-width: 0 !important;
+    max-width: 160px !important;
+    gap: .55rem !important;
+    overflow: hidden !important;
+  }
+
+  .nav__logo-circle{
+    width: 36px !important;
+    height: 36px !important;
+    flex: 0 0 36px !important;
+  }
+
+  .nav__logo-name{
+    max-width: 112px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    font-size: .95rem !important;
+  }
+
+  .nav__buttons{
+    gap: .45rem !important;
+    margin-left: auto !important;
+  }
+
+  .change-theme{
+    width: 38px !important;
+    height: 38px !important;
+    display: grid !important;
+    place-items: center !important;
+    border-radius: 50% !important;
+    background: rgba(255,255,255,.72) !important;
+    border: 1px solid rgba(0,0,0,.07) !important;
+    box-shadow: 0 8px 20px rgba(0,0,0,.06) !important;
+    color: #111 !important;
+  }
+
+  .language-switcher{
+    height: 38px !important;
+    padding: .18rem !important;
+    gap: .18rem !important;
+    border-radius: 999px !important;
+    background: rgba(255,255,255,.84) !important;
+    box-shadow: 0 8px 20px rgba(0,0,0,.06) !important;
+  }
+
+  .language-switcher__btn{
+    min-width: 36px !important;
+    height: 30px !important;
+    padding: 0 .48rem !important;
+    font-size: .72rem !important;
+    border-radius: 999px !important;
+  }
+
+  .nav__toggle{
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 50% !important;
+    flex: 0 0 38px !important;
+    box-shadow: 0 8px 20px rgba(0,0,0,.10) !important;
+  }
+
+  .nav__menu{
+    position: fixed !important;
+    inset: auto 0 0 0 !important;
+    top: -120% !important;
+    width: 100% !important;
+    height: 100dvh !important;
+    padding: 5.5rem 1.25rem 2rem !important;
+    background: rgba(10,10,10,.94) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    overflow-y: auto !important;
+    z-index: 9999 !important;
+    transition: top .35s ease !important;
+  }
+
+  .nav__menu.show-menu,
+  .show-menu{
+    top: 0 !important;
+  }
+
+  .nav__title,
+  .nav__name{
+    display: none !important;
+  }
+
+  .nav__close{
+    position: fixed !important;
+    top: 1.1rem !important;
+    right: 1.15rem !important;
+    width: 42px !important;
+    height: 42px !important;
+    display: grid !important;
+    place-items: center !important;
+    border-radius: 50% !important;
+    background: rgba(255,255,255,.10) !important;
+    border: 1px solid rgba(255,255,255,.18) !important;
+    color: #fff !important;
+    font-size: 1.45rem !important;
+    z-index: 10001 !important;
+  }
+
+  .nav__list{
+    width: min(100%, 360px) !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: .78rem !important;
+    row-gap: .78rem !important;
+    margin: 0 auto !important;
+  }
+
+  .nav__item{
+    width: 100% !important;
+  }
+
+  .nav__link{
+    width: 100% !important;
+    min-height: 54px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: .95rem 1.2rem !important;
+    border-radius: 1rem !important;
+    background: rgba(255,255,255,.075) !important;
+    border: 1px solid rgba(255,255,255,.12) !important;
+    color: rgba(255,255,255,.92) !important;
+    font-size: 1.05rem !important;
+    font-weight: 800 !important;
+    letter-spacing: .02rem !important;
+    line-height: 1 !important;
+    box-shadow: none !important;
+  }
+
+  .nav__link::after{
+    display: none !important;
+  }
+
+  .nav__link.active-link,
+  .nav__link:hover{
+    background: var(--first-color) !important;
+    border-color: var(--first-color) !important;
+    color: #fff !important;
+  }
+
+  .nav__link-button{
+    background: #fff !important;
+    color: #111 !important;
+    border-color: #fff !important;
+    box-shadow: 0 18px 38px rgba(0,0,0,.22) !important;
+  }
+
+  .nav__link-button:hover,
+  .nav__link-button.active-link{
+    background: var(--first-color) !important;
+    color: #fff !important;
+    border-color: var(--first-color) !important;
+  }
+
+  .dark-theme .header{
+    background: rgba(14,14,14,.96) !important;
+  }
+
+  .dark-theme .change-theme,
+  .dark-theme .language-switcher{
+    background: rgba(255,255,255,.09) !important;
+    border-color: rgba(255,255,255,.12) !important;
+    color: #fff !important;
+  }
+}
+
+@media screen and (max-width: 420px){
+  .nav{
+    width: calc(100% - 1rem) !important;
+  }
+
+  .nav__logo-name{
+    max-width: 88px !important;
+    font-size: .88rem !important;
+  }
+
+  .language-switcher__btn{
+    min-width: 32px !important;
+    font-size: .68rem !important;
+    padding-inline: .38rem !important;
+  }
+
+  .change-theme,
+  .nav__toggle{
+    width: 35px !important;
+    height: 35px !important;
+  }
+
+  .nav__menu{
+    padding-top: 5rem !important;
+  }
+
+  .nav__list{
+    width: min(100%, 320px) !important;
+    gap: .65rem !important;
+  }
+
+  .nav__link{
+    min-height: 50px !important;
+    font-size: .98rem !important;
+  }
+}
+
+/* =====================================================================
+   FINAL MOBILE MENU FIX - compact dropdown, does NOT cover the page
+   ===================================================================== */
+@media screen and (max-width: 1150px){
+  .nav__menu{
+    position: fixed !important;
+    top: 4.85rem !important;
+    left: .85rem !important;
+    right: .85rem !important;
+    bottom: auto !important;
+    width: auto !important;
+    height: auto !important;
+    max-height: 0 !important;
+    padding: 0 .85rem !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    overflow: hidden !important;
+    transform: translateY(-12px) scale(.985) !important;
+    background: rgba(248,248,248,.98) !important;
+    border: 1px solid rgba(0,0,0,.08) !important;
+    border-radius: 1.35rem !important;
+    box-shadow: 0 22px 60px rgba(0,0,0,.16) !important;
+    backdrop-filter: blur(18px) !important;
+    -webkit-backdrop-filter: blur(18px) !important;
+    display: block !important;
+    z-index: 999 !important;
+    transition: max-height .28s ease, opacity .22s ease, visibility .22s ease, transform .28s ease, padding .28s ease !important;
+  }
+
+  .nav__menu.show-menu,
+  #nav-menu.show-menu{
+    top: 4.85rem !important;
+    max-height: min(74vh, 560px) !important;
+    padding: 1rem !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    overflow-y: auto !important;
+    transform: translateY(0) scale(1) !important;
+  }
+
+  .nav__title,
+  .nav__name{
+    display: none !important;
+  }
+
+  .nav__close{
+    position: absolute !important;
+    top: .75rem !important;
+    right: .75rem !important;
+    width: 38px !important;
+    height: 38px !important;
+    display: grid !important;
+    place-items: center !important;
+    border-radius: 50% !important;
+    background: #111 !important;
+    border: 0 !important;
+    color: #fff !important;
+    font-size: 1.35rem !important;
+    z-index: 1000 !important;
+  }
+
+  .nav__list{
+    width: 100% !important;
+    max-width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: .65rem !important;
+    margin: 3rem 0 0 !important;
+    padding: 0 !important;
+  }
+
+  .nav__item{
+    width: 100% !important;
+  }
+
+  .nav__link{
+    width: 100% !important;
+    min-height: 52px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: .85rem .7rem !important;
+    border-radius: 1rem !important;
+    background: #f1f1f1 !important;
+    border: 1px solid rgba(0,0,0,.08) !important;
+    color: #151515 !important;
+    font-size: .96rem !important;
+    font-weight: 800 !important;
+    letter-spacing: .01rem !important;
+    line-height: 1.15 !important;
+    box-shadow: none !important;
+    text-align: center !important;
+  }
+
+  .nav__link::after{
+    display: none !important;
+  }
+
+  .nav__link.active-link,
+  .nav__link:hover{
+    background: var(--first-color) !important;
+    border-color: var(--first-color) !important;
+    color: #fff !important;
+  }
+
+  .nav__link-button{
+    background: #111 !important;
+    border-color: #111 !important;
+    color: #fff !important;
+  }
+
+  .dark-theme .nav__menu{
+    background: rgba(24,24,24,.98) !important;
+    border-color: rgba(255,255,255,.10) !important;
+    box-shadow: 0 22px 60px rgba(0,0,0,.40) !important;
+  }
+
+  .dark-theme .nav__link{
+    background: rgba(255,255,255,.07) !important;
+    border-color: rgba(255,255,255,.10) !important;
+    color: rgba(255,255,255,.92) !important;
+  }
+
+  .dark-theme .nav__link.active-link,
+  .dark-theme .nav__link:hover{
+    background: var(--first-color) !important;
+    border-color: var(--first-color) !important;
+    color: #fff !important;
+  }
+}
+
+@media screen and (max-width: 430px){
+  .nav__menu{
+    left: .55rem !important;
+    right: .55rem !important;
+    top: 4.55rem !important;
+    border-radius: 1.15rem !important;
+  }
+
+  .nav__menu.show-menu,
+  #nav-menu.show-menu{
+    top: 4.55rem !important;
+    max-height: min(68vh, 500px) !important;
+    padding: .8rem !important;
+  }
+
+  .nav__list{
+    grid-template-columns: 1fr !important;
+    gap: .5rem !important;
+    margin-top: 2.8rem !important;
+  }
+
+  .nav__link{
+    min-height: 46px !important;
+    font-size: .92rem !important;
+    border-radius: .9rem !important;
+  }
+}
