@@ -244,7 +244,8 @@ const languageContent = {
       ['IoT &amp; Automatisation', 'AeroSync Node-RED IoT Aircraft Monitoring', 'Workflow de monitoring aéronautique avec Node-RED, logique automatisée, traitement de signaux et visualisation dynamique des données techniques.'],
       ['Simulation &amp; Interface', 'Aero Manager PyQt5', 'Interface aéronautique développée en Python/PyQt5 pour gérer des paramètres de vol, visualiser des données et offrir une expérience cockpit professionnelle.'],
       ['Computer Vision &amp; Safety', 'AEROFOD Vision Pro', 'Plateforme intelligente de détection FOD sur piste aéroportuaire, conçue pour automatiser l’inspection visuelle et assister la décision opérationnelle.'],
-      ['Assistant IA &amp; Analyse Documentaire', 'AeroAssist Nova', 'Assistant aéronautique professionnel conçu pour le chat, l’analyse documentaire, les résumés techniques et l’assistance guidée dans une interface moderne.']
+      ['Assistant IA &amp; Analyse Documentaire', 'AeroAssist Nova', 'Assistant aéronautique professionnel conçu pour le chat, l’analyse documentaire, les résumés techniques et l’assistance guidée dans une interface moderne.'],
+      ['CFD &amp; Aérodynamique', 'Drone CFD Simulation — ANSYS CFX', 'Étude CFD transitoire d’un quadrirotor sous ANSYS CFX pour analyser les écoulements aérodynamiques, les champs de pression, les trajectoires d’écoulement et les structures tourbillonnaires.']
     ],
     certificatesTitle: 'Certificats.',
     certificatesIntro: 'Une sélection de certificats qui illustrent mon intérêt pour la <b>data visualisation</b>, la <b>business intelligence</b> et la conception d’outils analytiques professionnels.',
@@ -317,7 +318,8 @@ const languageContent = {
       ['IoT &amp; Automation', 'AeroSync Node-RED IoT Aircraft Monitoring', 'Aeronautical monitoring workflow with Node-RED, automated logic, signal processing and dynamic visualization of technical data.'],
       ['Simulation &amp; Interface', 'Aero Manager PyQt5', 'Aeronautical interface developed in Python/PyQt5 to manage flight parameters, visualize data and provide a professional cockpit experience.'],
       ['Computer Vision &amp; Safety', 'AEROFOD Vision Pro', 'Intelligent FOD detection platform for airport runways, designed to automate visual inspection and support operational decisions.'],
-      ['AI Assistant &amp; Document Analysis', 'AeroAssist Nova', 'Professional aeronautical assistant designed for chat, document analysis, technical summaries and guided assistance through a modern interface.']
+      ['AI Assistant &amp; Document Analysis', 'AeroAssist Nova', 'Professional aeronautical assistant designed for chat, document analysis, technical summaries and guided assistance through a modern interface.'],
+      ['CFD &amp; Aerodynamics', 'Drone CFD Simulation — ANSYS CFX', 'Transient CFD study of a quadrotor in ANSYS CFX to analyze aerodynamic flow, pressure fields, streamlines and vortex structures.']
     ],
     certificatesTitle: 'Certificates.',
     certificatesIntro: 'A selection of certificates showing my interest in <b>data visualization</b>, <b>business intelligence</b> and the design of professional analytical tools.',
